@@ -34,9 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
             } else {
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
             }
         });
     }
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
             }
+            document.body.style.overflow = '';
         });
     });
 
